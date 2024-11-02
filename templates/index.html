@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF & DOCX Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">File Converter</h2>
+        <p class="mb-3">Unggah file Anda dan pilih jenis konversi yang diinginkan.</p>
+
+        <!-- Form untuk mengunggah file dan memilih jenis konversi -->
+        <form action="/convert" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input type="file" name="file" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <select name="conversion_type" class="form-select" required>
+                    <option value="pdf_to_docx">PDF ke DOCX</option>
+                    <option value="docx_to_pdf">DOCX ke PDF</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Konversi</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

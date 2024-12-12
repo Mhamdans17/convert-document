@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Direktori virtual environment
+venv/
+.env/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Direktori upload dan file hasil konversi
+uploads/
+
+# Editor dan sistem file khusus
+.vscode/
+.idea/
+*.swp
+
+# File log dan cache
+*.log
+*.cache
+*.tmp
+
+# File dependency
+*.egg-info/
+pip-log.txt
+
+# File yang dihasilkan oleh PyCharm
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Mac OS dan sistem file spesifik lainnya
+.DS_Store
+Thumbs.db
